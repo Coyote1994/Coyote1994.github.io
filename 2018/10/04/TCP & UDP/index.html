@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="Coyote">
 <meta property="og:description" content="TCP和UDP都是传输层协议，但UDP协议并不提供超时重传，出错重传等功能，也就是说其是不可靠的协议。 TCPTCP是全双工协议，是可靠的面向连接协议，建立TCP连接需要两端三次握手，通过TCP连接传送的数据，无差错，不丢失，不重复。  优点： 传输比UDP可靠。  缺点： 比较耗时，实时性差；对系统资源要求较多。每一条TCP连接只能是点到点的。   UDPUDP为不可靠的无连接协议，数据传输出去">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-10-04T00:58:51.587Z">
+<meta property="og:updated_time" content="2018-10-04T01:03:49.971Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="TCP &amp; UDP">
 <meta name="twitter:description" content="TCP和UDP都是传输层协议，但UDP协议并不提供超时重传，出错重传等功能，也就是说其是不可靠的协议。 TCPTCP是全双工协议，是可靠的面向连接协议，建立TCP连接需要两端三次握手，通过TCP连接传送的数据，无差错，不丢失，不重复。  优点： 传输比UDP可靠。  缺点： 比较耗时，实时性差；对系统资源要求较多。每一条TCP连接只能是点到点的。   UDPUDP为不可靠的无连接协议，数据传输出去">
@@ -305,8 +305,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/电影/" itemprop="url" rel="index">
-                    <span itemprop="name">电影</span>
+                  <a href="/categories/计算机网络/" itemprop="url" rel="index">
+                    <span itemprop="name">计算机网络</span>
                   </a>
                 </span>
 
@@ -361,7 +361,7 @@
 <p>传输不可靠，易丢包</p>
 </li>
 </ul>
-<h2 id="QQ的网络连接"><a href="#QQ的网络连接" class="headerlink" title="QQ的网络连接"></a>QQ的网络连接</h2><ul>
+<h3 id="QQ的网络连接"><a href="#QQ的网络连接" class="headerlink" title="QQ的网络连接"></a>QQ的网络连接</h3><ul>
 <li><p><strong>登陆过程</strong>，客户端client采用TCP协议向服务器server发送信息，HTTP协议下载信息。登陆之后，会有一个TCP连接来保持在线状态。</p>
 </li>
 <li><p><strong>向好友发普通消息</strong>，客户端client采用UDP协议，但是需要通过服务器转发。腾讯为了确保传输消息的可靠，采用上层协议来保证可靠传输。如果消息发送失败，客户端会提示消息发送失败，并可重新发送。使用UDP大大提高了消息传输的效率。（QQ对于普通用户是采用UDP协议，对于会员用TCP协议）</p>
@@ -373,7 +373,7 @@
 <li><p><strong>内网里面的两个客户端传文件</strong>，QQ采用的是P2P技术，不需要服务器中转。</p>
 </li>
 </ul>
-<h2 id="游戏的网络连接"><a href="#游戏的网络连接" class="headerlink" title="游戏的网络连接"></a>游戏的网络连接</h2><p>实时游戏中，UDP以其简单、传输快的优势，取代了TCP。</p>
+<h3 id="游戏的网络连接"><a href="#游戏的网络连接" class="headerlink" title="游戏的网络连接"></a>游戏的网络连接</h3><p>实时游戏中，UDP以其简单、传输快的优势，取代了TCP。</p>
 <ul>
 <li><p>网速提升，UDP丢包率降低</p>
 <p>  网速的提升给UDP的稳定性提供可靠网络保障，丢包率很低，如果使用应用层重传，能够确保传输的可靠性。</p>
@@ -571,7 +571,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#TCP"><span class="nav-number">1.</span> <span class="nav-text">TCP</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#UDP"><span class="nav-number">2.</span> <span class="nav-text">UDP</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#QQ的网络连接"><span class="nav-number"></span> <span class="nav-text">QQ的网络连接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#游戏的网络连接"><span class="nav-number"></span> <span class="nav-text">游戏的网络连接</span></a></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#TCP"><span class="nav-number">1.</span> <span class="nav-text">TCP</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#UDP"><span class="nav-number">2.</span> <span class="nav-text">UDP</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#QQ的网络连接"><span class="nav-number">3.</span> <span class="nav-text">QQ的网络连接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#游戏的网络连接"><span class="nav-number">4.</span> <span class="nav-text">游戏的网络连接</span></a></li></ol></div>
             
 
           </div>
