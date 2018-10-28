@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="Coyote">
 <meta property="og:description" content="前言关于静态库和动态库： 静态库：以 .a 和 .framework 为文件后缀名。链接时会被完整的复制到可执行文件中，被多次使用就有多份拷贝。 动态库：以 .tbd 和 .framework 为文件后缀名。链接时不复制，程序运行时由系统动态加载到内存，系统只加载一次，多个程序共用（如系统的UIKit.framework等），节省内存。 framework 静态库制作 创建新工程，选择 Cocoa">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-10-28T03:08:29.465Z">
+<meta property="og:updated_time" content="2018-10-28T03:10:35.967Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="iOS framework 静态库制作并上传到 cocoapods">
 <meta name="twitter:description" content="前言关于静态库和动态库： 静态库：以 .a 和 .framework 为文件后缀名。链接时会被完整的复制到可执行文件中，被多次使用就有多份拷贝。 动态库：以 .tbd 和 .framework 为文件后缀名。链接时不复制，程序运行时由系统动态加载到内存，系统只加载一次，多个程序共用（如系统的UIKit.framework等），节省内存。 framework 静态库制作 创建新工程，选择 Cocoa">
@@ -359,8 +359,9 @@
 </li>
 </ol>
 <p>然后用生成的二进制文件替换 framework 中的二进制文件</p>
-<h3 id="上传到-cocoapods"><a href="#上传到-cocoapods" class="headerlink" title="上传到 cocoapods"></a>上传到 cocoapods</h3><blockquote>
-<p>准备工作：<br>创建 Git 代码管理仓库并克隆到本地<br>安装 cocoapods<br>将需要上传的文件放到本地的克隆仓库并上传到 GitHub 远端仓库<br>git 打上版本号 tag，并上传到服务器</p>
+<h3 id="上传到-cocoapods"><a href="#上传到-cocoapods" class="headerlink" title="上传到 cocoapods"></a>上传到 cocoapods</h3><p><strong>准备工作：</strong></p>
+<blockquote>
+<p>创建 Git 代码管理仓库并克隆到本地<br>安装 cocoapods<br>将需要上传的文件放到本地的克隆仓库并上传到 GitHub 远端仓库<br>git 打上版本号 tag，并上传到服务器</p>
 </blockquote>
 <h4 id="注册-Trunk"><a href="#注册-Trunk" class="headerlink" title="注册 Trunk"></a>注册 Trunk</h4><pre><code>pod trunk register XXX@XXX.com &apos;名字&apos; --verbose
 </code></pre><p>查看注册信息</p>
