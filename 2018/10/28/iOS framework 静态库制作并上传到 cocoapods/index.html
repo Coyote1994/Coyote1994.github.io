@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="#  关于静态库和动态库： 静态库：以 .a 和 .framework 为文件后缀名。链接时会被完整的复制到可执行文件中，被多次使用就有多份拷贝。 动态库：以 .tbd 和 .framework 为文件后缀名。链接时不复制，程序运行时由系统动态加载到内存，系统只加载一次，多个程序共用（如系统的UIKit.framework等），节省内存。 framework 静态库制作 创建新工程，选择 Coco">
+<meta name="description" content="前言关于静态库和动态库： 静态库：以 .a 和 .framework 为文件后缀名。链接时会被完整的复制到可执行文件中，被多次使用就有多份拷贝。 动态库：以 .tbd 和 .framework 为文件后缀名。链接时不复制，程序运行时由系统动态加载到内存，系统只加载一次，多个程序共用（如系统的UIKit.framework等），节省内存。 framework 静态库制作 创建新工程，选择 Cocoa">
 <meta name="keywords" content="cocoapods">
 <meta property="og:type" content="article">
 <meta property="og:title" content="iOS framework 静态库制作并上传到 cocoapods">
 <meta property="og:url" content="http://yoursite.com/2018/10/28/iOS framework 静态库制作并上传到 cocoapods/index.html">
 <meta property="og:site_name" content="Coyote">
-<meta property="og:description" content="#  关于静态库和动态库： 静态库：以 .a 和 .framework 为文件后缀名。链接时会被完整的复制到可执行文件中，被多次使用就有多份拷贝。 动态库：以 .tbd 和 .framework 为文件后缀名。链接时不复制，程序运行时由系统动态加载到内存，系统只加载一次，多个程序共用（如系统的UIKit.framework等），节省内存。 framework 静态库制作 创建新工程，选择 Coco">
+<meta property="og:description" content="前言关于静态库和动态库： 静态库：以 .a 和 .framework 为文件后缀名。链接时会被完整的复制到可执行文件中，被多次使用就有多份拷贝。 动态库：以 .tbd 和 .framework 为文件后缀名。链接时不复制，程序运行时由系统动态加载到内存，系统只加载一次，多个程序共用（如系统的UIKit.framework等），节省内存。 framework 静态库制作 创建新工程，选择 Cocoa">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-10-28T03:02:40.706Z">
+<meta property="og:updated_time" content="2018-10-28T03:08:29.465Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="iOS framework 静态库制作并上传到 cocoapods">
-<meta name="twitter:description" content="#  关于静态库和动态库： 静态库：以 .a 和 .framework 为文件后缀名。链接时会被完整的复制到可执行文件中，被多次使用就有多份拷贝。 动态库：以 .tbd 和 .framework 为文件后缀名。链接时不复制，程序运行时由系统动态加载到内存，系统只加载一次，多个程序共用（如系统的UIKit.framework等），节省内存。 framework 静态库制作 创建新工程，选择 Coco">
+<meta name="twitter:description" content="前言关于静态库和动态库： 静态库：以 .a 和 .framework 为文件后缀名。链接时会被完整的复制到可执行文件中，被多次使用就有多份拷贝。 动态库：以 .tbd 和 .framework 为文件后缀名。链接时不复制，程序运行时由系统动态加载到内存，系统只加载一次，多个程序共用（如系统的UIKit.framework等），节省内存。 framework 静态库制作 创建新工程，选择 Cocoa">
 
 
 
@@ -342,8 +342,7 @@
       
 
       
-        <p># </p>
-<p>关于静态库和动态库：</p>
+        <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>关于静态库和动态库：</p>
 <p><strong>静态库</strong>：以 .a 和 .framework 为文件后缀名。链接时会被完整的复制到可执行文件中，被多次使用就有多份拷贝。</p>
 <p><strong>动态库</strong>：以 .tbd 和 .framework 为文件后缀名。链接时不复制，程序运行时由系统动态加载到内存，系统只加载一次，多个程序共用（如系统的UIKit.framework等），节省内存。</p>
 <h3 id="framework-静态库制作"><a href="#framework-静态库制作" class="headerlink" title="framework 静态库制作"></a>framework 静态库制作</h3><ol>
@@ -361,23 +360,7 @@
 </ol>
 <p>然后用生成的二进制文件替换 framework 中的二进制文件</p>
 <h3 id="上传到-cocoapods"><a href="#上传到-cocoapods" class="headerlink" title="上传到 cocoapods"></a>上传到 cocoapods</h3><blockquote>
-<p>准备工作：</p>
-</blockquote>
-<blockquote>
-<ul>
-<li>创建 Git 代码管理仓库并克隆到本地</li>
-</ul>
-</blockquote>
-<blockquote>
-<ul>
-<li>安装 cocoapods</li>
-</ul>
-</blockquote>
-<blockquote>
-<p>将需要上传的文件放到本地的克隆仓库并上传到 GitHub 远端仓库</p>
-</blockquote>
-<blockquote>
-<p>git 打上版本号 tag，并上传到服务器</p>
+<p>准备工作：<br>创建 Git 代码管理仓库并克隆到本地<br>安装 cocoapods<br>将需要上传的文件放到本地的克隆仓库并上传到 GitHub 远端仓库<br>git 打上版本号 tag，并上传到服务器</p>
 </blockquote>
 <h4 id="注册-Trunk"><a href="#注册-Trunk" class="headerlink" title="注册 Trunk"></a>注册 Trunk</h4><pre><code>pod trunk register XXX@XXX.com &apos;名字&apos; --verbose
 </code></pre><p>查看注册信息</p>
@@ -579,7 +562,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#framework-静态库制作"><span class="nav-number">1.</span> <span class="nav-text">framework 静态库制作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#上传到-cocoapods"><span class="nav-number">2.</span> <span class="nav-text">上传到 cocoapods</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#注册-Trunk"><span class="nav-number">2.1.</span> <span class="nav-text">注册 Trunk</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#配置-podspec-文件"><span class="nav-number">2.2.</span> <span class="nav-text">配置 podspec 文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#提交到-cocoapods"><span class="nav-number">2.3.</span> <span class="nav-text">提交到 cocoapods</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#framework-静态库制作"><span class="nav-number">2.</span> <span class="nav-text">framework 静态库制作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#上传到-cocoapods"><span class="nav-number">3.</span> <span class="nav-text">上传到 cocoapods</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#注册-Trunk"><span class="nav-number">3.1.</span> <span class="nav-text">注册 Trunk</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#配置-podspec-文件"><span class="nav-number">3.2.</span> <span class="nav-text">配置 podspec 文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#提交到-cocoapods"><span class="nav-number">3.3.</span> <span class="nav-text">提交到 cocoapods</span></a></li></ol></li></ol></div>
             
 
           </div>
